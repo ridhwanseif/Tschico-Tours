@@ -1,0 +1,80 @@
+.table {
+    overflow: hidden;
+
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+
+        .image {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .status {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Approved{
+            color: green;
+            background-color: rgba(5, 88, 5, 0.067);
+        }
+        &.Pending{
+            color: goldenrod;
+            background-color: rgba(0, 128, 0, 0.067);
+        }
+    }
+}
+
+.cellWithImg{
+    display: flex;
+    align-items: center;
+
+    .cellImg{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 1rem;
+    }
+}
+
+.cellWithStatus{
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active{
+        color: green;
+        background-color: rgba(5, 88, 5, 0.067);
+    }
+    &.pending{
+        color: goldenrod;
+        background-color: rgba(0, 128, 0, 0.067);
+    }
+}
+
+.cellAction{
+    display: flex;
+    align-items: center;
+    gap: 2;
+
+    .viewButton{
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-right: .5rem;
+        color: darkblue;
+        border: 1px dotted rgba(0, 0, 139, 0.514);
+        cursor: pointer;
+    }
+
+    .deleteButton{
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: crimson;
+        border: 1px dotted red;
+        cursor: pointer;
+    }
+}

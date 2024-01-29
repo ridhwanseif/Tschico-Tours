@@ -1,0 +1,109 @@
+.sidebar {
+    flex: 1.06;
+    border-right: 0.12rem solid rgb(230, 227, 227);
+    height: 39.68rem;
+    background-color: #fffffff1;
+    
+
+    .top {
+        height: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: .1rem;
+        margin-left: 1.8rem;
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #6439ff;
+        }
+    }
+
+    hr {
+        height: 0;
+        border: 0.12rem solid rgb(173, 169, 169);
+    }
+
+    .center {
+        padding-left: 1.1rem;
+        // scroll-behavior: smooth;
+        // height: 500px;
+        // overflow: scroll;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+            .title{
+                font-size: .8rem;
+                font-weight: bold;
+                color: #999;
+                margin-top: 7px;
+                margin-bottom: 5px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: .5rem;
+                margin-right: .5rem;
+                border-radius: .6rem;
+                transition: .5s;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: #d5d5dae0;
+                    text-decoration: none;
+                }
+
+                .icons{
+                    font-size: 18px;
+                    color: #7451f8;
+                    margin-right: .5rem;
+                }
+
+                span{
+                    font-size: 1rem;
+                    font-weight: 6000;
+                    color: #888;
+                }
+
+                Link{
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+        margin-left: 2.5rem;
+
+        .colorOption{
+            width: 2rem;
+            height: 2rem;
+            border-radius: .5rem;
+            border: 1px solid #7451f8;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+
+            &:nth-child(2){
+                background-color: #333;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+
+
+    .homeContainer {
+        flex: 6;
+
+        .scrowll {
+            scroll-behavior: smooth;
+            height: 520px;
+            overflow: auto;
+        }
+
+        .wedgets,
+        .charts {
+            display: flex;
+            padding: 1.3rem;
+            gap: 2rem;
+        }
+
+    }
+}

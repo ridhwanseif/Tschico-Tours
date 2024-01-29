@@ -1,0 +1,66 @@
+.navbar {
+    height: 3.2rem;
+    border-radius: 0.5px solid rgb(231, 228, 228);
+    display: flex;
+    align-items: 2rem;
+    color: #555;
+
+    background-image: linear-gradient(rgba(243, 240, 240, 0), rgba(250, 244, 244, 0.169));
+    z-index: 3;
+    overflow: hidden;
+    
+
+    .wrapper {
+        width: 100%;
+        padding: .05rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding-left: .6rem;
+            border-radius: 1rem;
+            margin-left: -30rem;
+
+
+            .searchIcon {
+                font-size: 1.2rem;
+                padding-right: .15rem;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                height: 1.9rem;
+                width: 90%;
+
+                &::placeholder {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+                cursor: pointer;
+                position: relative;
+
+                .icon{
+                    font-size: 1.3rem;
+                }
+
+               
+            }
+        }
+    }
+}

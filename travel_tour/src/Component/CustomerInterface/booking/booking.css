@@ -1,0 +1,33 @@
+booking
+.booking{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.a{
+    margin-right: 2rem;
+}
+
+.fab , .fas, .btn{
+    color: #ff5722;
+}
+
+.booking-card{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(253, 251, 251, 0), rgba(250, 247, 247, 0)), url(./z1.jpg);
+}
+.haf-booking{
+    background-image: linear-gradient(rgb(249, 249, 249), rgb(252, 252, 252));
+}
+.haf-booking .card-header{
+    background-image: linear-gradient(rgb(249, 249, 249), rgb(252, 252, 252));
+}
+
+  

@@ -1,0 +1,104 @@
+.home {
+
+    .homeContainer {
+
+        .scrowll {
+            .top_header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                padding: 1rem 1rem 0 1rem;
+
+                .left {
+
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            .service {
+                padding: 1rem 1rem 1rem 1rem;
+                display: flex;
+                box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                -webkit-box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                -moz-box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                margin-top: 1rem;
+                gap: 1rem;
+
+                .service-content {
+                    display: flex;
+                    flex-direction: column;
+                  }
+
+                .left {
+                    flex: .4;
+                    box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                    -webkit-box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                    -moz-box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                    border-radius: .5rem;
+                    background-color: rgba(170, 170, 245, 0.096);
+                    position: relative;
+                    margin-bottom: 1rem;
+                    object-fit: cover;
+
+                    Img {
+                        border-radius: .5rem;
+                        object-fit: cover;
+                        height: 8rem;
+                    }             
+
+                }
+
+                .right {
+                    flex: 2;
+                    box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                    -webkit-box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                    -moz-box-shadow: -3px 4px 15px 2px rgba(0, 0, 0, 0.68);
+                    margin-bottom: 1rem;
+                    border-radius: .5rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// AddService
+.new {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        flex: 1;
+        text-align: center;
+
+        img{
+            margin-top: 2rem;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: rgb(119, 126, 156);
+        }
+    }
+
+    .right {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+
+        .all {
+
+            form {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
+                .rowInput {}
+            }
+        }
+
+    }
+}

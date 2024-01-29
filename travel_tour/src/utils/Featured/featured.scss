@@ -1,0 +1,52 @@
+.featured{
+    flex: 2;
+    box-shadow: 12px 12px 24px 5px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 12px 12px 24px 5px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 12px 12px 24px 5px rgba(0, 0, 0, 0.73);
+    border-radius: .5rem;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: gray;
+        margin: 0 .7rem;
+
+        .title{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+    }
+
+    .Bottom{
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+
+        .featuredChart{
+            width: 7rem;
+            margin-bottom: .5rem;
+
+        }
+        .title{
+            color: gray;
+        }
+
+        .amount{
+            font-size: 2rem;
+            margin: -.5rem;
+        }
+
+        .decs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .9rem;
+            text-align: center;
+            color: gray;
+        }
+    }
+}

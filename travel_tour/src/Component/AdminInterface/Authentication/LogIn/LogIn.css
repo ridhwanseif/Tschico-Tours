@@ -1,0 +1,8 @@
+h3,h6{
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+}
+.row{
+    overflow: hidden;
+}
