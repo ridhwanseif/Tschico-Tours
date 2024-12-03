@@ -165,7 +165,7 @@ export const AdminDestination = () => {
 
 
             {/* List of destinations */}
-            {paginatedDestinations.map((destination) => (
+            {paginatedDestinations?.map((destination) => (
                 <div key={destination.id} className="destination py-1">
                     <Card
                         hoverable
@@ -208,7 +208,7 @@ export const AdminDestination = () => {
                                 <Stack direction="row" className='mt-2' spacing={0}>
                                     <Flex vertical>
                                         <Flex wrap="wrap">
-                                            {destinationArea.map((destinationArea) => (
+                                            {destinationArea?.map((destinationArea) => (
                                                 (destinationArea.destination.id === destination.id) ? (
                                                     <Stack direction="row" spacing={0}>
                                                         <Button type='link' size="sm"

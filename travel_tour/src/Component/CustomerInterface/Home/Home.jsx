@@ -35,7 +35,7 @@ export default function Home() {
                       height: '9rem',
                       marginLeft: '1rem',
                       marginRight: '1rem',
-                      marginBottom: '-2rem'
+                      marginBottom: '.3rem'
                     }}
                   />
                   <h3 className="text-white">Work with Tschico Tours</h3>

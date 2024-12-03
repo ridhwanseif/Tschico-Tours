@@ -331,3 +331,48 @@ a {
 
 
 }
+
+/* Small screens (phones, up to 600px) */
+@media screen and (max-width: 600px) {
+    .home-page .section_contact .contact-left .text {
+        font-size: 1.6rem; /* Smaller text for smaller screens */
+    }
+
+    .home-page .section_contact .contact-left .icons .icon-contact {
+        font-size: 3rem; /* Adjust icon size */
+    }
+
+    .distination-details h4 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+}
+
+/* Medium screens (tablets, 601px to 1024px) */
+@media screen and (max-width: 1024px) {
+    .home-page .section_contact .contact-left .text {
+        font-size: 2rem; /* Slightly smaller text for tablets */
+    }
+
+    .home-page .section_contact .contact-left .icons .icon-contact {
+        font-size: 4rem; /* Adjust icon size */
+    }
+
+    .distination-details h4 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+}
+
+/* Large screens (desktops, 1025px and up) */
+@media screen and (min-width: 1025px) {
+    .home-page .section_contact .contact-left .text {
+        font-size: 2.4rem; /* Default or larger text */
+    }
+
+    .home-page .section_contact .contact-left .icons .icon-contact {
+        font-size: 5rem; /* Default icon size */
+    }
+
+    .distination-details h4 {
+        font-size: 2rem; /* Default heading size */
+    }
+}
