@@ -19,12 +19,12 @@ export const Post = () => {
     return (
         <div className="row align-items-center py-2"> {/* Reduced padding */}
             {/* Left Section */}
-            <div className="col-md-4">
+            <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="content-left text-start">
                     {aboutData && (
                         <>
                             <div className="py-1">
-                                <h5 className="card-title text py-1" style={{ fontSize: '1.3rem' }}>
+                                <h5 className="card-title text py-1" style={{ fontSize: '1.5rem', fontWeight: '800', color: '#ff5722' }}>
                                     {aboutData.title || 'No Title Available'}
                                 </h5>
                                 <h5 className="card-title text" style={{ fontSize: '1.1rem' }}>
@@ -38,8 +38,8 @@ export const Post = () => {
                     )}
                     <button
                         onClick={() => navigate('/booking')}
-                        className="btn btn-link text text-sm icon-move-right"
-                        style={{ textDecoration: 'none', color: 'inherit' }}
+                        className="btn btn-lin icon-move-right"
+                        style={{ textDecoration: 'none', color: '#ff5722' }}
                     >
                         Booking Now
                         <i className="fas fa-arrow-right text-xs ms-1"></i>
@@ -47,9 +47,10 @@ export const Post = () => {
                 </div>
             </div>
 
+
             {/* Right Section */}
-            <div className="col-md-8 mb-3" style={{ height: '10px' }}> {/* Reduced padding */}
-                <div style={{ height: '300px', overflow: 'hidden' }}> {/* Set a fixed height for the carousel */}
+            <div className="col-md-8 col-sm-12 mb-3"> {/* Reduced padding */}
+                <div style={{ overflow: 'hidden' }}> {/* Set a fixed height for the carousel */}
                     <ControlledCarousel />
                 </div>
             </div>

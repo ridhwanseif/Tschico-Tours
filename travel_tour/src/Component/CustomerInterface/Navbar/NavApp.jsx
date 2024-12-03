@@ -31,7 +31,7 @@ const NavApp = () => {
   return (
     <Navbar appearance={navStyle ? 'default' : 'subtle'} className="header-nav">
       <Nav>
-        <Nav.Item style={{ width: '22rem', height: '3rem' }} className="nav-item">
+        <Nav.Item style={{ width: '22rem', height: '3rem' }} className="nav-item i-img">
           <img
             src={Img1}
             alt="Logo"
@@ -41,27 +41,27 @@ const NavApp = () => {
         </Nav.Item>
       </Nav>
       <Nav pullRight>
-        <Nav.Item className={`nav-item ${isActive('/') ? 'active' : ''}`}>
+        <Nav.Item className={`nav-item i-link ${isActive('/') ? 'active' : ''}`}>
           <Link to="/" className="nav-text link">
             Home
           </Link>
         </Nav.Item>
-        <Nav.Item className={`nav-item ${isActive('/destination') ? 'active' : ''}`}>
+        <Nav.Item className={`nav-item i-link ${isActive('/destination') ? 'active' : ''}`}>
           <Link to="/destination" className="nav-text link">
             Destination
           </Link>
         </Nav.Item>
-        <Nav.Item className={`nav-item ${isActive('/booking') ? 'active' : ''}`}>
+        <Nav.Item className={`nav-item i-link ${isActive('/booking') ? 'active' : ''}`}>
           <Link to="/booking" className="nav-text link">
             Booking
           </Link>
         </Nav.Item>
-        <Nav.Item className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>
+        <Nav.Item className={`nav-item i-link ${isActive('/contact') ? 'active' : ''}`}>
           <Link to="/contact" className="nav-text link">
             Contact
           </Link>
         </Nav.Item>
-        <Nav.Item className="nav-item login-item">
+        <Nav.Item className="nav-item i-link login-item">
           <DialogUtils
             buttonIcon={<LoginOutlined />}
             buttonAppearance="link"

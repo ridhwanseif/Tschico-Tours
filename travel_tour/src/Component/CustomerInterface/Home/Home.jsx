@@ -22,42 +22,43 @@ export default function Home() {
       <Social />
       <div className='home-page'>
         <header className="bg-gradient-dark w-100">
-          <div className="page-header min-vh-85" id='homeId'>
+          <div className="page-header min-vh-85" id="homeId">
             <span className="mask bg-gradient-dark opacity-7"></span>
             <div className="container">
               <div className="row justify-content-center">
-                <div className="col-lg-8 text-center mx-auto my-auto">
+                <div className="col-lg-8 col-md-10 col-sm-12 text-center mx-auto my-auto">
                   <img
                     src={Img1}
                     alt="My Image"
+                    className="img-fluid"
                     style={{
-                      width: '9rem',
-                      height: '9rem',
-                      marginLeft: '1rem',
-                      marginRight: '1rem',
-                      marginBottom: '.3rem'
+                      maxWidth: '150px',
+                      height: 'auto',
+                      margin: '-.5rem auto',
                     }}
                   />
-                  <h3 className="text-white">Work with Tschico Tours</h3>
-                  <p className="lead mb-4 text-white opacity-8">We guarantee you taxi transfer service across Zanzibar</p>
-                  {/* <!-- <a href="https://playground.sarufi.io/playground/255"> <button type="submit" className="btn bg-white text-dark">Contact BluePower</button></a> --> */}
-                  <h6 className="text-white mb-2 mt-2">Find Us on</h6>
-                  <div className="d-flex justify-content-center"
-                    style={{
-                      color: "#ff5722"
-                    }}>
-                    <i className="fab fa-facebook text-lg me-4"></i>
-                    <i className="fab fa-instagram text-lg me-4"></i>
-                    <i className="fab fa-twitter text-lg me-4"></i>
-                    <i className="fab fa-google-plus text-lg"></i>
-                    {/* <i className="fab fa-google-plus text-lg text-white"></i> */}
+                  <h3 className="text-white mt-3">Work with Tschico Tours</h3>
+                  <p className="lead mb-4 text-white opacity-8">
+                    We guarantee you a reliable taxi service and enjoyable Zanzibar day tours to enjoy your holiday in Zanzibar
+                  </p>
 
+                  <h6 className="text-white mb-2 mt-3">Find Us on</h6>
+                  <div
+                    className="d-flex justify-content-center flex-wrap"
+                    style={{ color: '#ff5722' }}
+                  >
+                    <i className="fab fa-facebook text-lg me-3 mb-2"></i>
+                    <i className="fab fa-instagram text-lg me-3 mb-2"></i>
+                    <i className="fab fa-twitter text-lg me-3 mb-2"></i>
+                    <i className="fab fa-google-plus text-lg mb-2"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </header>
+
+
 
         <div className="card card-body shadow-xl mx-1 mx-md-4 mt-n5 mb-0">
           <section className="bg-gradient-white">

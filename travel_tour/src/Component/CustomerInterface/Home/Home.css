@@ -138,7 +138,7 @@
 
 /* distination */
 
-.distination {  
+.distination {
     height: auto;
     /* background-size: cover;
     background-position: center; */
@@ -335,44 +335,159 @@ a {
 /* Small screens (phones, up to 600px) */
 @media screen and (max-width: 600px) {
     .home-page .section_contact .contact-left .text {
-        font-size: 1.6rem; /* Smaller text for smaller screens */
+        font-size: 1.6rem;
+        /* Smaller text for smaller screens */
     }
 
     .home-page .section_contact .contact-left .icons .icon-contact {
-        font-size: 3rem; /* Adjust icon size */
+        font-size: 3rem;
+        /* Adjust icon size */
     }
 
     .distination-details h4 {
-        font-size: 1.5rem; /* Smaller heading */
+        font-size: 1.5rem;
+        /* Smaller heading */
     }
 }
 
 /* Medium screens (tablets, 601px to 1024px) */
 @media screen and (max-width: 1024px) {
     .home-page .section_contact .contact-left .text {
-        font-size: 2rem; /* Slightly smaller text for tablets */
+        font-size: 2rem;
+        /* Slightly smaller text for tablets */
     }
 
     .home-page .section_contact .contact-left .icons .icon-contact {
-        font-size: 4rem; /* Adjust icon size */
+        font-size: 4rem;
+        /* Adjust icon size */
     }
 
     .distination-details h4 {
-        font-size: 1.8rem; /* Adjust heading size */
+        font-size: 1.8rem;
+        /* Adjust heading size */
     }
 }
 
 /* Large screens (desktops, 1025px and up) */
 @media screen and (min-width: 1025px) {
     .home-page .section_contact .contact-left .text {
-        font-size: 2.4rem; /* Default or larger text */
+        font-size: 2.4rem;
+        /* Default or larger text */
     }
 
     .home-page .section_contact .contact-left .icons .icon-contact {
-        font-size: 5rem; /* Default icon size */
+        font-size: 5rem;
+        /* Default icon size */
     }
 
     .distination-details h4 {
-        font-size: 2rem; /* Default heading size */
+        font-size: 2rem;
+        /* Default heading size */
     }
 }
+
+.page-header img {
+    width: 9rem;
+    height: 9rem;
+}
+
+@media (max-width: 768px) {
+    .page-header img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .page-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .page-header img {
+        max-width: 120px;
+    }
+
+    .card-profile .row {
+        flex-direction: column-reverse;
+    }
+
+    .card-profile .col-md-8 {
+        margin-bottom: 15px;
+        /* Optional: Space between image and text on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .page-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+
+    .page-header img {
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-left h5 {
+        font-size: 1.1rem;
+    }
+
+    .content-left p {
+        font-size: 0.9rem;
+    }
+
+    .content-left button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-left h5 {
+        font-size: 1rem;
+    }
+
+    .content-left p {
+        font-size: 0.8rem;
+    }
+
+    .content-left button {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-profile .row {
+      flex-direction: row;
+    }
+  }
+
+  /* Base styles for layout */
+.destination-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* For medium screens and below, make the image appear on top and the text at the bottom */
+  @media (max-width: 991px) {
+    .destination-flex {
+      flex-direction: column-reverse;
+    }
+  
+    .destination-image {
+      margin-bottom: 1rem; /* Optional: to create space between the image and text */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .g-card {
+      margin-bottom: 1.5rem;
+    }
+  }
+  

@@ -157,40 +157,32 @@ body {
 
 /* ################ SOCIAL ############# */
 .social_m {
-  /* display: flex; */
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  left: 76rem;
-  bottom: 8rem;
-  margin: 2rem;
-
-  width: max-content;
-  display: block;
-  padding: 0.2rem 1rem;
-  z-index: 2;
-  position: fixed;
-  transform: translateX(-50%);
-
-  display: flex;
-  gap: .8rem;
-  border-radius: .5rem;
-  color: #ff5722;
-  font-size: 1.1rem;
-
-
+  position: fixed; /* Keeps it fixed on the screen */
+  right: 1rem; /* Adjusts the distance from the right edge */
+  bottom: 1rem; /* Adjusts the distance from the bottom edge */
+  display: flex; /* Ensures flexbox layout */
+  flex-direction: column; /* Arranges icons vertically */
+  align-items: center; /* Centers items horizontally */
+  gap: 0.8rem; /* Adds space between icons */
+  padding: 0.5rem; /* Adds padding around the container */
+  border-radius: 0.5rem; /* Smoothens the corners */
+  z-index: 999; /* Ensures it stays on top */
+  background: rgba(255, 255, 255, 0.9); /* Optional: Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
 }
-.social_m a{
+
+.social_m a {
   color: #ff5722;
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
 }
 
 .social_m a:hover {
   font-size: 1.5rem;
-  box-shadow: 0rem salmon;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: #ff5722;
-  padding: 0.1rem .4rem;
+  padding: 0.1rem 0.4rem;
   background: linear-gradient(180deg, rgba(249, 234, 234, 0.753), rgba(255, 255, 255, 0.491));
 }
+
 
 /* ################ SCROLL ############# */

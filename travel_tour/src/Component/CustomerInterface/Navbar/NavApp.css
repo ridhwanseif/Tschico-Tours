@@ -1,188 +1,146 @@
-/* .header-nav {
-    background-size: cover;
-    background-position: center;
-    z-index: 3;
-    width: 100%;
-    padding-top: 0.3rem;
-    height: 3.7rem;
-    position: fixed;
-    border-radius: 0 0 1rem 0;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
-  }
-  
-
-.login-btn{
-    color: #ff5722;
-    font-size: 1rem;
-}
-
-Nav {
-    padding-right: 2rem;
-    }
-    
-  
-
-.nav-item,
-h5 {
-   
-    text-decoration: none;
-}
-
-.nav-text.active,
-.nav-item.active {
-    color: #ff5722;
-    }
-    
-    .nav-text,
-    .nav-item {
-        text-decoration: none;
-        position: relative;
-        color: #ff5722;
-        transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
-        }
-        
-        
-        
-        .nav-item.active .link {
-            color: #ff5722;
-            font-weight: bold;
-            }
-            
-            .nav-item .link {
-                color: #000;
-                text-decoration: none;
-                }
-                
-                .nav-item .link:hover {
-                    color: #ff5722;
-                    }
-                    */
-                    
-                    /* Navbar Styles */
-
-  
-
+/* Navbar Container */
 .header-nav {
-    background: #2d2d2d; /* Dark background */
-    height: 4rem;
-    position: fixed;
-    width: 100%;
-    padding-top: 0.3rem;
-    height: 3.7rem;
-    z-index: 10;
-    /* display: flex; */
-    align-items: center;
-    /* justify-content: space-between; */
-    border-radius: 0 0 1rem 0;
-    text-decoration: none;
+  background: #2d2d2d;
+  /* Dark background */
+  height: 3.6rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 1.2rem;
+  border-bottom: 2px solid #ff5722;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 
-  }
-  
-  /* Logo and Title */
-  .nav-logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    /* margin-right: 0.5rem; */
-  }
-  
-  .nav-title {
-    color: #ff5722;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Navigation Links */
-  .nav-item {
-    margin: 0 .01rem;
-  }
-  
-  .link {
-    color: #ff5722;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.2rem .5rem;
-    transition: all 0.6s ease-in-out;
-  }
+}
 
-                    
+.header-nav.scrolled {
+  text-decoration: none;
+  background: rgba(45, 45, 45, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo and Title */
+.nav-item img {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-item h5 {
+  color: #ff5722;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-item {
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.link {
+  color: #ff5722;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  /* padding: 0.5rem 1rem; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  /* background-color: #ff5722; */
+  text-decoration: none;
+  color: #ff5722;
+}
+
+.nav-item.active .link {
+  background-color: #f0d0d0;
+  padding: 0.5rem 1.4rem;
+  text-decoration: none;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+/* Login Button */
+.nav-item .MuiSvgIcon-root {
+  color: #ff5722;
+  text-decoration: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.login-item .MuiSvgIcon-root:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 nav .menu {
-    display: none;
-    color: #ff5722;
-    text-decoration: none;
+  display: none;
+}
 
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  Nav .i-link {
+    display: none;
+  }
+
+  .login-item {
+    display: none;
+  }
+
+  Nav .menu {
+    display: block;
+    color: #ff5722;
+  }
+
+  .login-item {
+    display: none;
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
-    Nav .link {
-        display: none;
-        text-decoration: none;
 
-    }
-
-    .login-item {
-      display: none;
-      text-decoration: none;
-
+  .nav-logo,
+  .nav-title {
+    display: none;
   }
 
-    nav .login-item{
-      display: none
-    }
-
-    nav .menu {
-        display: block;
-        color: #ff5722;
-        text-decoration: none;
-    }
-}
-
-.nav-item,
-.nav-text:hover {
-    font-size: 1rem;
-    color: #ff5722;
-    transition: .9s ease-in;
-    text-decoration: none;
-}
-  
-  /* Active Link */
-  .nav-item.active .link {
-    background-color: #ffffff;
-    color: #ff5722;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-
+  Nav .i-link {
+    display: none;
   }
-  
-  /* Icon for Login */
-  .nav-item .MuiSvgIcon-root {
+
+  Nav .i-img {
+    width: 15rem;
+  }
+
+  Nav .menu {
+    display: block;
     color: #ff5722;
-    font-size: 1.5rem;
     cursor: pointer;
+    background-color: transparent;
+  }
+
+  .login-item {
+    display: none;
     text-decoration: none;
 
   }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    .nav-title {
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-    .login-item {
-      display: none;
-      text-decoration: none;
-  }
-    .nav-item {
-      margin: 0 0.5rem;
-      text-decoration: none;
-
-    }
-  }
-  
+}
