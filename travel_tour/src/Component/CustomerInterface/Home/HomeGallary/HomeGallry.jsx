@@ -32,11 +32,11 @@ function HomeGallary() {
 
     return (
 
-        <div className="card card-body section-about shadow-xl mx-3 mx-md-4 my-5">
+        <div className="card card-body section-about shadow-xl mx-3 mx-md-4 my-3">
         <section className="gallary py-1">
           <div className="container">
             <div className="row text align-items-center">
-              <h3 className="text z-index-1 position-relative" style={{ textAlign: 'start' }}>
+              <h3 className="z-index-1 position-relative" style={{ textAlign: 'start', color: '#ff5722' }}>
                 Tours and Excursions we offer.
               </h3>
               <p className="text opacity-8 mb-4" style={{ textAlign: 'start' }}>
@@ -50,7 +50,6 @@ function HomeGallary() {
                   <div className="card g-card">
                     <div className="gallary-box">
                       <div className="slider">
-                        <a href="tours.php#SBlue">
                           <figure>
                             {excursionPhotos?.map((photo, imgIndex) => {
                               if (photo.excursions === item.id) {
@@ -63,7 +62,6 @@ function HomeGallary() {
                               return null;
                             })}
                           </figure>
-                        </a>
                       </div>
                     </div>
                     <div>
@@ -74,25 +72,26 @@ function HomeGallary() {
                           </a>
                         </h5>
                         <span>
-                          <ParagraphWithLimit text={item.longDescription} limit={15} />
+                          <ParagraphWithLimit text={item.longDescription} limit={10} />
                         </span>
                         <a href="javascript:;" className="text-info text-sm icon-move-right">
                           <GallaryModel toursId={item.id} />
                           <i className="fas fa-arrow-right text-xs ms-1"></i>
                         </a>
                         <div className="m-1">
-                          <h5>
+                          <h6>
                             <span
-                              className="p-1 text-black"
+                              className="p-1 text-black "
                               style={{
                                 borderRadius: '.8rem',
                                 marginTop: '1rem',
-                                fontWeight: 'bold',
+                                fontWeight: '500',
+                                color: '#ff5722',
                               }}
                             >
                               Price Per Person: {item.price}
                             </span>
-                          </h5>
+                          </h6>
                         </div>
                       </div>
                     </div>

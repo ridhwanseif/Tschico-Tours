@@ -38,7 +38,7 @@ const GallaryModel = ({ toursId }) => {
 
     return (
         <>
-            <span size="md" onClick={() => handleOpen('full')}>
+            <span size="lg" onClick={() => handleOpen('full')}>
                 Read More
             </span>
 

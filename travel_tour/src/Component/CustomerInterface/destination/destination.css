@@ -20,6 +20,11 @@
     background-image: linear-gradient(rgba(98, 97, 97, 0.18), rgba(121, 119, 119, 0.169)), url(./z1.jpg);
 }
 
+.text-dest{
+  color: #ff5722;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 640px) {
     .destinationList {
         display: none;
@@ -47,6 +52,11 @@
       text-align: center;
       margin-bottom: 20px;
     }
+  }
+
+  .img-container img{
+    width: 1rem;
+    height: 1rem;
   }
   
   .image-container {

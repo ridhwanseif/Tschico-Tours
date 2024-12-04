@@ -1,15 +1,12 @@
 /* Navbar Container */
 .header-nav {
   background: #2d2d2d;
-  /* Dark background */
   height: 3.6rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
-  /* display: flex; */
-  /* justify-content: space-between; */
   align-items: center;
   padding: 0 1.2rem;
   border-bottom: 2px solid #ff5722;

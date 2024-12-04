@@ -24,26 +24,42 @@ const Destination = () => {
 
             <NavApp />
             {/* <Social /> */}
+
             <header className="bg-gradient-dark w-100">
-                <div className="page-header min-vh-85">
+                <div className="page-header min-vh-85" id="homeId">
                     <span className="mask bg-gradient-dark opacity-7"></span>
                     <div className="container">
-                        <div className="row justify-content-center my-5">
-                            <div className="col-lg-8 text-center mx-auto my-auto">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-8 col-md-10 col-sm-12 text-center mx-auto my-auto">
                                 <img
                                     src={Img1}
                                     alt="My Image"
+                                    className="img-fluid"
                                     style={{
-                                        width: '9rem',
-                                        height: '9rem',
-                                        marginLeft: '1rem',
-                                        marginRight: '1rem',
-                                        marginBottom: '2rem'
+                                        maxWidth: '150px',
+                                        height: 'auto',
+                                        margin: '-.5rem auto',
                                     }}
                                 />
-                                <h1 className="text-white">Zanzibar Destination Area</h1>
-                                <p className="lead mb-0 text-white opacity-8">welcame to the Zanzibar taxi and tours, we are here to complete the needs of your taxi transfer services from airport to hotel and from hotel to hotel across the Zanzibar.</p>
+                                <h3 className="text-white mt-3">
+                                    Zanzibar Destination Area
+                                </h3>
+                                <p className="lead mb-4 text-white opacity-8">
+                                    welcame to the Zanzibar taxi and tours, we are here to
+                                    complete the needs of your taxi transfer services from
+                                    airport to hotel and from hotel to hotel across the Zanzibar.
+                                </p>
 
+                                <h6 className="text-white mb-2 mt-3">Find Us on</h6>
+                                <div
+                                    className="d-flex justify-content-center flex-wrap"
+                                    style={{ color: '#ff5722' }}
+                                >
+                                    <i className="fab fa-facebook text-lg me-3 mb-2"></i>
+                                    <i className="fab fa-instagram text-lg me-3 mb-2"></i>
+                                    <i className="fab fa-twitter text-lg me-3 mb-2"></i>
+                                    <i className="fab fa-google-plus text-lg mb-2"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -93,7 +109,7 @@ const Destination = () => {
                                                                 </>
                                                             );
                                                         } else {
-                                                            return null; // If the title is not "zanzibarNorth", return null to render nothing
+                                                            return null;
                                                         }
                                                     })}
                                                 </tbody>
@@ -124,7 +140,7 @@ const Destination = () => {
                                                                 </>
                                                             );
                                                         } else {
-                                                            return null; // If the title is not "zanzibarNorth", return null to render nothing
+                                                            return null;
                                                         }
                                                     })}
                                                 </tbody>
@@ -155,7 +171,7 @@ const Destination = () => {
                                                                 </>
                                                             );
                                                         } else {
-                                                            return null; // If the title is not "zanzibarNorth", return null to render nothing
+                                                            return null;
                                                         }
                                                     })}
                                                 </tbody>
@@ -186,7 +202,7 @@ const Destination = () => {
                                                                 </>
                                                             );
                                                         } else {
-                                                            return null; // If the title is not "zanzibarNorth", return null to render nothing
+                                                            return null; 
                                                         }
                                                     })}
                                                 </tbody>
@@ -194,101 +210,12 @@ const Destination = () => {
                                         </div>
                                     </div>
 
-                                    {/* <div class="col4-box">
-                                        <div class="container mt-3">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>South Areas</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#southPaje">Paje</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#southBwejuu">Bwejuu</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#southMichamvi">Michamvi</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#southJambiani">Jambiani</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#southKizimkazi">Kizimkazi</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                    <div class="col4-box">
-                                        <div class="container mt-3">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Zanzibar Central/Urban</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#urbanUroa">Uroa</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#urbanMarumbi">Marumbi</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#urbanPongwe">Pongwe</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#urbanSTown">Stone Town</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#urbanSHotel">Seacliff Hotel</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                    <div class="col4-box">
-                                        <div class="container mt-3">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Destination To Destination</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#">Nungwi to Kizimkazi</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#">Uroa to Jambian</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#">Matemwe to Paje</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#">Kiwengwa to Kendwa</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="border-radius-md"><a href="#">Stone Town to Paje</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div> */}
-
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h4>Transfer Price varies according to government taxes</h4>
+                    {/* <h4>Transfer Price varies according to government taxes</h4> */}
                 </section>
 
             </div>
@@ -302,94 +229,3 @@ const Destination = () => {
 
 export default Destination;
 
-
-
-function srcset(image, size, rows = 1, cols = 1) {
-    return {
-        src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-        srcSet: `${image}?w=${size * cols}&h=${size * rows
-            }&fit=crop&auto=format&dpr=2 2x`,
-    };
-}
-
-function QuiltedImageList() {
-    return (
-        <ImageList
-            sx={{ width: 500, height: 450 }}
-            variant="quilted"
-            cols={4}
-            rowHeight={121}
-        >
-            {itemData.map((item) => (
-                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                    <img
-                        {...srcset(item.img, 121, item.rows, item.cols)}
-                        alt={item.title}
-                        loading="lazy"
-                    />
-                </ImageListItem>
-            ))}
-        </ImageList>
-    );
-}
-
-const itemData = [
-    {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-        title: 'Breakfast',
-        rows: 2,
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-        title: 'Burger',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-        title: 'Coffee',
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-        title: 'Hats',
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-        title: 'Honey',
-        author: '@arwinneil',
-        rows: 2,
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-        title: 'Basketball',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-        title: 'Fern',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-        title: 'Mushrooms',
-        rows: 2,
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-        title: 'Tomato basil',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-        title: 'Sea star',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-        cols: 2,
-    },
-];

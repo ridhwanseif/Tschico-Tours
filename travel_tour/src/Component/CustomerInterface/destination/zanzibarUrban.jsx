@@ -37,7 +37,7 @@ const Destination = () => {
       <section className="my">
         <div className="container">
           <div className="py-3">
-            <h5 className="py-1">
+            <h5 className="py-1 text-dest">
               {destination?.title}
             </h5>
             <p className="pe-md-4">
@@ -60,12 +60,12 @@ const Destination = () => {
                           boxShadow: '10px 10px 18px rgba(0, 0, 0, 1)',
                         }}
                         onMouseOver={(e) => {
-                          e.target.style.transform = 'scale(2.05)'; 
-                          e.target.style.boxShadow = '0 20px 16px rgba(0, 0, 0, 0.3)'; 
+                          e.target.style.transform = 'scale(1.05)'; 
+                          e.target.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.3)'; 
                         }}
                         onMouseOut={(e) => {
                           e.target.style.transform = 'scale(1)'; 
-                          e.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; 
+                          e.target.style.boxShadow = '0 2px 2px rgba(0, 0, 0, 0.3)'; 
                         }}
                       />
                     </div>
@@ -78,7 +78,7 @@ const Destination = () => {
                         </span>
                       </p>
                       <div className="py-1" style={{ textAlign: 'start' }}>
-                        <h5><span className=' m-1 p-1 text-black' style={{ backgroundColor: '#ff5722' }}>Price: {area.price}</span></h5>
+                        <h5><span className=' m-1 p-1 text-black'>Price: {area.price}</span></h5>
                       </div>
                       <div className="github-buttons" style={{ textAlign: 'end' }}>
                         <Button
