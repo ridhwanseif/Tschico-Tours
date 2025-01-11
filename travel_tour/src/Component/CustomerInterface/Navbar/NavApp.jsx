@@ -48,7 +48,12 @@ const NavApp = () => {
         </Nav.Item>
         <Nav.Item className={`nav-item i-link ${isActive('/destination') ? 'active' : ''}`}>
           <Link to="/destination" className="nav-text link">
-            Destination
+            Transfers
+          </Link>
+        </Nav.Item>
+        <Nav.Item className={`nav-item i-link ${isActive('/excursion') ? 'active' : ''}`}>
+          <Link to="/excursion" className="nav-text link">
+            Excursions
           </Link>
         </Nav.Item>
         <Nav.Item className={`nav-item i-link ${isActive('/booking') ? 'active' : ''}`}>

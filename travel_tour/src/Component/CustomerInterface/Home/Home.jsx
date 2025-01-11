@@ -1,25 +1,16 @@
 import React from 'react'
 import './Home.css';
 import { Post } from './Post';
-import { Card } from 'antd';
-import Footer from '../Footer/Footer';
 import Img1 from '../../../theZanzibarTaxi.png';
 import HomeDestination from './HomeDestination/HomeDestination';
 import HomeGallary from './HomeGallary/HomeGallry';
-import NavApp from '../Navbar/NavApp';
-import Social from '../../../utils/Social';
 
-
-
-
-const { Meta } = Card;
 
 
 export default function Home() {
   return (
     <>
-      <NavApp />
-      <Social />
+     
       <div className='home-page'>
         <header className="bg-gradient-dark w-100">
           <div className="page-header min-vh-85" id="homeId">
@@ -37,7 +28,7 @@ export default function Home() {
                       margin: '-.5rem auto',
                     }}
                   />
-                  <h3 className="text-white mt-3">Work with Tschico Tours</h3>
+                  <h3 className="text-white mt-3">Welcome Zanzibar</h3>
                   <p className="lead mb-4 text-white opacity-8">
                     We guarantee you a reliable taxi service and enjoyable Zanzibar day tours to enjoy your holiday in Zanzibar
                   </p>
@@ -85,19 +76,10 @@ export default function Home() {
           </section>
         </div>
 
-
-
         <div id='tour'>
           <HomeGallary />
         </div>
 
-
-        <section className="bg-gradient-white">
-          <div className="container">
-            <Footer />
-
-          </div>
-        </section>
       </div >
     </>
   )

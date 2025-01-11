@@ -72,11 +72,10 @@ function HomeDestination() {
                 <div className="row">
                     <div className="col-md-8 text-start mb-3">
                         <h3 className="text-white z-index-1 position-relative" style={{ textAlign: 'start' }}>
-                            Our Transfer Destination
+                            Our Transfer Destinations
                         </h3>
                         <p className="text-white opacity-8" style={{ textAlign: 'start' }}>
-                            The Zanzibar taxi assure you a safe journey and complete the needs of your taxis transfer service with a
-                            cheap price, we are available 24 hours a day.
+                        We assure you a safe journey and complete the needs of your taxis transfer service, we are available 24 hours a day.
                         </p>
                     </div>
                 </div>

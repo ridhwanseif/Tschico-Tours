@@ -7,8 +7,6 @@ import { fetchExcursionById, fetchExcursionsPhotos } from '../../../../api/Excur
 import { useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
 import '../../../../utils/carousel/carousel.css';
-// import { Carousel } from "react-bootstrap";
-import ControlledCarousel from '../../../../utils/carousel/ControlledCarousel';
 
 
 const GallaryModel = ({ toursId }) => {

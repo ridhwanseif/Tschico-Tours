@@ -10,10 +10,10 @@ function HomeGallary() {
     const { data: excursions, isLoading, isError } = useQuery('excursions', fetchExcursions);
     const { data: excursionPhotos, isLoadingPhoto, isErrorPhoto } = useQuery('excursionPhotos', fetchExcursionsPhotos);
 
-    // console.log(excursionPhotos)
-    if (isLoading || isLoadingPhoto) return <div>Loading...</div>;
+    // // console.log(excursionPhotos)
+    // if (isLoading || isLoadingPhoto) return <div>Loading...</div>;
 
-    if (isError || isErrorPhoto) return <div>Error loading tasks</div>;
+    // if (isError || isErrorPhoto) return <div>Error loading tasks</div>;
 
     const ParagraphWithLimit = ({ text, limit }) => {
         const words = text.split(' ');
@@ -45,7 +45,7 @@ function HomeGallary() {
             </div>
       
             <div className="row">
-              {excursions.map((item, index) => (
+              {excursions?.map((item, index) => (
                 <div className="col-sm-12 col-md-6 col-lg-3 mb-4" key={index}>
                   <div className="card g-card">
                     <div className="gallary-box">

@@ -7,12 +7,12 @@
     import InstagramIcon from '@mui/icons-material/Instagram';
     import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
     import './footer.css';
-    import { Panel } from 'rsuite';
 
 
     const Footer = () => {
         return (
-            <div>
+            <section className="bg-gradient-white">
+          <div className="container">
 
                 <div className="row footers" style={{ textAlign: 'start', marginLeft: '6rem' }}>
 
@@ -76,6 +76,7 @@
                 </div>
 
             </div>
+            </section>
         )
     }
 

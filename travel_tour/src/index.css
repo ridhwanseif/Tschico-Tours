@@ -1,8 +1,5 @@
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -167,21 +164,23 @@ body {
   padding: 0.5rem; /* Adds padding around the container */
   border-radius: 0.5rem; /* Smoothens the corners */
   z-index: 999; /* Ensures it stays on top */
-  background: rgba(255, 255, 255, 0.9); /* Optional: Light background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  /* background: rgba(255, 255, 255, 0.9); Optional: Light background */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Optional: Subtle shadow */
+  
 }
 
 .social_m a {
-  color: #ff5722;
+  font-size: 4rem;
+  color: #178a13;
   transition: all 0.3s ease-in-out; /* Smooth hover effect */
 }
 
 .social_m a:hover {
-  font-size: 1.5rem;
+  font-size: 3rem;
   border-radius: 0.5rem;
   color: #ff5722;
   padding: 0.1rem 0.4rem;
-  background: linear-gradient(180deg, rgba(249, 234, 234, 0.753), rgba(255, 255, 255, 0.491));
+  /* background: linear-gradient(180deg, rgba(249, 234, 234, 0.753), rgba(255, 255, 255, 0.491)); */
 }
 
 

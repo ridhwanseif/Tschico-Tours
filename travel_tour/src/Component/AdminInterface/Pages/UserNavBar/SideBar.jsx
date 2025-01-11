@@ -109,51 +109,51 @@ const SideBar = () => {
 
   const menuItem = [
     {
-      key: '/dashboard',
+      key: '/auth/dashboard',
       icon: <DashboardRoundedIcon />,
       label: 'Dashboard',
     },
     {
-      key: '/Users',
+      key: '/auth/Users',
       icon: <UserOutlined />,
       label: 'Users',
     },
     {
-      key: '/Setting',
+      key: '/auth/Setting',
       icon: <LowPriorityRoundedIcon />,
       label: 'land Setting',
       // hidden: userRole !== 'admin',
     },
     {
-      key: '/adminDestination',
+      key: '/auth/adminDestination',
       icon: <SupportAgentRoundedIcon />,
       label: 'Destinations',
     },
     {
-      key: '/adminExcursion',
+      key: '/auth/adminExcursion',
       icon: <LowPriorityRoundedIcon />,
       label: 'Excusions',
       // hidden: userRole !== 'admin',
     },
     {
-      key: '/adminBooking',
+      key: '/auth/adminBooking',
       icon: <LowPriorityRoundedIcon />,
       label: 'Booking',
       // hidden: userRole !== 'admin',
     },
     {
-      key: '/notification',
+      key: '/auth/notification',
       icon: <NotificationsNoneIcon />,
       label: 'Notification',
     },
 
     {
-      key: '/profile',
+      key: '/auth/profile',
       icon: <AccountCircleRoundedIcon />,
       label: 'Profiles',
     },
     {
-      key: '/password',
+      key: '/auth/password',
       icon: <EnhancedEncryptionRoundedIcon />,
       label: 'Password',
     },

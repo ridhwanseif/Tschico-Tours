@@ -14,16 +14,15 @@ import { fetchDestinationAreas } from "../../../api/DestinationAPI";
 const Destination = () => {
 
     const navigete = useNavigate()
-    const { data, isLoading, isError } = useQuery('northAreas', fetchDestinationAreas);
+    const { data } = useQuery('northAreas', fetchDestinationAreas);
 
-    if (isLoading) return <div>Loading...</div>;
-    if (isError) return <div>Error loading data</div>;
+    // if (isLoading) return <div>Loading...</div>;
+    // if (isError) return <div>Error loading data</div>;
 
     return (
         <>
 
-            <NavApp />
-            {/* <Social /> */}
+           
 
             <header className="bg-gradient-dark w-100">
                 <div className="page-header min-vh-85" id="homeId">
@@ -95,7 +94,7 @@ const Destination = () => {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {data.map((area, index) => {
+                                                    {data?.map((area, index) => {
                                                         if (area.destination.id === 1) {
                                                             return (
                                                                 <>
@@ -126,7 +125,7 @@ const Destination = () => {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {data.map((area, index) => {
+                                                    {data?.map((area, index) => {
                                                         if (area.destination.id === 2) {
                                                             return (
                                                                 <>
@@ -157,7 +156,7 @@ const Destination = () => {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {data.map((area, index) => {
+                                                    {data?.map((area, index) => {
                                                         if (area.destination.id === 3) {
                                                             return (
                                                                 <>
@@ -188,7 +187,7 @@ const Destination = () => {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {data.map((area, index) => {
+                                                    {data?.map((area, index) => {
                                                         if (area.destination.id === 4) {
                                                             return (
                                                                 <>
@@ -219,9 +218,7 @@ const Destination = () => {
                 </section>
 
             </div>
-            <div className="mx-2 mx-md-7 mt-n0 ml-5">
-                <Footer />
-            </div>
+           
 
         </>
     )

@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Descriptions, Input, Layout, Space, Tag, Pagination, Modal, Button, Card, Flex, Typography, Tooltip } from 'antd';
+import { Input, Layout, Pagination, Modal, Button, Card, Flex, Typography, Tooltip } from 'antd';
 import { ExclamationCircleFilled } from '@ant-design/icons';
 import SearchIcon from '@rsuite/icons/Search';
 import { InputGroup } from 'rsuite';
-import axios from '../../../../api/axios';
 import AuthContext from '../../../../context/AuthProvider';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useMutation, useQuery, queryClient } from 'react-query';
 import { fetchDestinations, deleteDestination, fetchDestinationAreas } from '../../../../api/DestinationAPI';
 import AddDestination from './AddDestination';
@@ -14,11 +13,6 @@ import Stack from '@mui/material/Stack';
 import EditDestination from './EditDestination';
 import AddArea from './AddArea';
 
-
-
-const { Meta } = Card;
-const { Sider, Content } = Layout;
-const { Search } = Input;
 
 export const AdminDestination = () => {
     const [userRole, setUserRole] = useState('');
